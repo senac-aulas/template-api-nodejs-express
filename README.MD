@@ -25,15 +25,17 @@ Esta é uma aplicação básica de API REST construída com **Node.js** e **Expr
 1. **Clonar o repositório**:
 
 ```bash
+## Clone o projeto
 git clone https://github.com/kaiqueCovo/template-api-nodejs-express.git
 
+## Entre na pasta do projeto
 cd template-api-nodejs-express.git
 
+## Instale as dependências
 npm install
 
-
+## Inicie o projeto
 npm run dev
-
-
-
 ```
+
+Made with ♥ by [Kaique Covo](www.linkedin.com/in/kaiquecovo) :wave:
