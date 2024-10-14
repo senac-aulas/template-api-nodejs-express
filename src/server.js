@@ -7,6 +7,11 @@ app.use(express.json()); // Middleware para permitir o uso de JSON nas requisiç
 // Define as rotas da aplicação, utilizando '/api/items' como base para todas as rotas de itens
 app.use("/api/items", itemRoutes);
 
+// Rota de health check para verificar se o servidor está online
+app.get("/health", (req, res) => {
+  res.status(200).json({ message: "Server is running" });
+});
+
 // Porta do servidor, pode ser definida pela variável de ambiente ou padrão 3000
 const PORT = process.env.PORT || 3000;
 
