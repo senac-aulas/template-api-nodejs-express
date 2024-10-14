@@ -8,4 +8,8 @@ router.get('/', itemController.getItems);
 // Define a rota POST para criar um novo item
 router.post('/', itemController.createItem);
 
+router.get('/teste', (req, res) => {
+  res.json({ message: 'Teste de rota' });
+});
+
 module.exports = router;  // Exporta as rotas para serem usadas em outros arquivos
